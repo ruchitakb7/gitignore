@@ -15,7 +15,7 @@ class Product {
     const db = getDb();
     let dbOp;
     if (this._id) {
-      // Update the product
+      
       dbOp = db
         .collection('products')
         .updateOne({ _id: this._id }, { $set: this });
